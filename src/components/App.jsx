@@ -36,6 +36,7 @@ export class App extends Component {
     }
     alert(`${obj.name} is already in contacts `);
   };
+
   visibileContacts = () => {
     const { contacts, filter } = this.state;
     const normalize = filter.toLowerCase();
@@ -43,7 +44,7 @@ export class App extends Component {
       contact.name.toLowerCase().includes(normalize)
     );
   };
-  render() {
+    render() {
     const visibileContacts = this.visibileContacts();
     console.log(this.state);
     return (
@@ -60,18 +61,4 @@ export class App extends Component {
     );
   }
 };
-  // return (
-  //   <div
-  //     style={{
-  //       height: '100vh',
-  //       display: 'flex',
-  //       justifyContent: 'center',
-  //       alignItems: 'center',
-  //       fontSize: 40,
-  //       color: '#010101'
-  //     }}
-  //   >
-  //     React homework template
-  //   </div>
-  // );
 
