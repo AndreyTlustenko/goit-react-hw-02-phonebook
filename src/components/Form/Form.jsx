@@ -105,8 +105,7 @@ class Form extends Component {
         </button>
       </form>
     );
-  }
-}
+  }}
 
 Form.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.object),
